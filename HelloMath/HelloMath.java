@@ -12,9 +12,11 @@ public class HelloMath
          System.out.println( "Enter your second number:" );
          int n2 =input.nextInt();
          
-         System.out.println (n1 + n2);
-         System.out.println (n1 - n2);
-         System.out.println (n1 - n2)
+         String out1 = Integer.toString(n1);
+         String out2 = Integer.toString(n2);
+         
+         System.out.println (out1 "+" out2);
+
         
             
         }
