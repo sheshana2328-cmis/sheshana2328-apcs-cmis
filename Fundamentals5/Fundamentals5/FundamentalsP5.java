@@ -9,6 +9,23 @@ public class FundamentalsP5
             String fs2 = "Me";
             String fs3 = "Thirteen Thirtyfive";
             
-            String names[] = {}
+            String movies[] = {fm1, fm2,fm3};
+            for (int index = 0; index<movies.length; index++ )
+            {
+                System.out.println(movies[index]);
+            } //end for
+            {
+                System.out.print("\n\n");
+            }
+            
+            String songs[] = {fs1, fs2, fs3};
+            
+            int song = 0;
+            
+            while (song<songs.length)
+            {
+                System.out.print(songs[song] + ", " );
+                song ++;
+            } //end while
         } // end main
     } // end class
