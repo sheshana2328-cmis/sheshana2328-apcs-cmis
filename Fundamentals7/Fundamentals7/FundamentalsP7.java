@@ -2,24 +2,38 @@ public class FundamentalsP7
     {
         public static void main ( String[] args )
             {
-             int[] ranNum = new int[10];
+             int[] ar = new int[10];
+             int neg = 0;
+             int pos = 0;
              
-             for ( int index = 0; index < ranNum.length; index++ )
+             for ( int index = 0; index < ar.length; index++ )
                 {
-                    ranNum[ index ] = (int) ( Math.random()*100 );
-                    if ( ranNum >= (Math.randome()*100)
+                    int ran = 0;
+                    
+                    ran = (int) (100*Math.random());
+                    if (ran % 2 == 0)
                         {
-                            int neg = ranNum*-1
+                            ar[index] = ((int)(100*(-1)*Math.random()));
+                            neg++;
                         }
                     else{
-                    }
+                        array[index]=((int)100*Math.random()));
+                        pos++;
+                        }
                 }
-             while ( index < ranNum.length)
+             int index = 0;
+             while ( index < ar.length)
                 {
+                    System.out.println(ar[index] + " " );
+                    index++;
                 }
              
-             for ()
+             for (int ran = 0; ran < ar.length; ran++)
                 {
+                    if(array [ran] > 0)
+                        {
+                            System.out.println(array[ran] + "\t"
+                        }
                 }
             } // end method main
     } // end class
