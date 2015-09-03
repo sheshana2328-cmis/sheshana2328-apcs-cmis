@@ -17,7 +17,7 @@ public class FundamentalsP7
                             neg++;
                         }
                     else{
-                        array[index]=((int)100*Math.random()));
+                        ar[index]=((int)(100*Math.random()));
                         pos++;
                         }
                 }
@@ -27,12 +27,12 @@ public class FundamentalsP7
                     System.out.println(ar[index] + " " );
                     index++;
                 }
-             
+             System.out.println("There are " + pos + " positive numbers.");
              for (int ran = 0; ran < ar.length; ran++)
                 {
-                    if(array [ran] > 0)
+                    if(ar [ran] > 0)
                         {
-                            System.out.println(array[ran] + "\t"
+                            System.out.print(ar[ran] + "\t");
                         }
                 }
             } // end method main
