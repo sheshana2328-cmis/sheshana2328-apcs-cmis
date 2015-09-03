@@ -19,14 +19,19 @@ public class FundamentalsP8
                     {
                         System.out.println(artist[index]);
                     } // end for
-                    
-               if ( artist.equals("Michael Jackson"))
-              {
-                  System.out.println("We found Michael!");
-              }
-              else 
-              {
-                  System.out.println("No Michael in music ")
-              }
+                {
+                    System.out.print("\n");
+                }
+              
+                for (int index = 0; index<artist.length; index++ ) 
+                    { if ( artist[index].equals("Michael Jackson"))
+                        {
+                            System.out.println("We found Michael!");
+                        }
+                        else 
+                        {
+                            System.out.println("No Michael in Music" + "[" + index + "]");
+                        }
+                    }
             } // end method main
     } // end class FundamentalsP8
