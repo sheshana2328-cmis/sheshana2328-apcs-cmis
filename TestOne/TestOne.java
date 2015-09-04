@@ -12,7 +12,9 @@ public class TestOne
                 
                 for ( int index = 0; index < array.length; index++ )
                     {
-                       System.out.println( array[index] ); 
+                       array[ index ] = (int) (Math.random()*(50+1));
+                       System.out.println(array[index] + " ");
+
                     }
                 
             } // end method main
