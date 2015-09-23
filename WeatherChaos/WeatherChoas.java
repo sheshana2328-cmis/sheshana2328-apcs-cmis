@@ -12,18 +12,25 @@ public class WeatherChoas
                 
                 int[] numdays = new int[inp];
                 int[] swing = new int[inp];
+                String headings;
                 String[] heading = {"day","temp","swing","description"};
                 
                 if ( inp >= 1 && inp <= 31 )
                 {
+                    for (int i = 0; i < heading.length; i++)
+                    {
+                        System.out.print(heading[i]+ "\t");
+                    }
+                    System.out.println("\n");
+                    for (int i = 0; i < inp; i++ )
+                    {
+                       System.out.println(i+1);
+                    }
+                    //System.out.println 
                     for ( int i = 0; i < inp; i++ )
                     {
                         x = (int) (Math.random()*200)-100;
-                        //System.out.println(x);
-                    }
-                    for (int i = 0; i < inp; i++ )
-                    {
-                        
+                        System.out.println(x);
                     }
                 } // end if
                 
