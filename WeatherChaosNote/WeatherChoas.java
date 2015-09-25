@@ -1,38 +1,62 @@
-
 import javax.swing.JOptionPane;
 
-public class WeatherChoas
+public class WeatherChoas 
     {
         public static void main ( String[] argv )
             {
                 String input = JOptionPane.showInputDialog("Enter an integer between 1 - 31:");
                 
                 int inp = Integer.parseInt(input);
-                int x;
-                int y;
+                int[] temp = new int[inp];
+                int swing;
+                int day;
+                String des;
+               
                 
-                int[] numdays = new int[inp];
-                int[] swing = new int[inp];
-                String headings;
-                
-                //String addto; 
-                String[] heading = {"day","temp","swing","description"};
-                
-                if ( inp >= 1 && inp <= 31 )
+                if (inp <= 31 && inp >= 1)
                 {
-                    for (int i = 0; i < heading.length; i++)
+                    System.out.println("Days" + "\tTemp" + "\tSwing" + "\tDescription");
+                    
+                    for ( int i = 0; i < inp; i++ )
                     {
-                        System.out.print(heading[i]+ "\t");
-                        int ind = i+1;
-                        addto += ind;
-                        //System.out.println(i+1);
-                        /*x = (int) (Math.random()*200)-100;
-                        System.out.println(x);*/
+                        int x = (int) (Math.random()*200)-100;
+                        temp[i] = x;
+                        day = i+1;
+                        if ( i > 0 )
+                            {
+                                swing = Math.abs(temp[1] - temp[i-1]);
+                            }
+                        else 
+                            {
+                                swing = 0;
+                            }
+                        if ( x < 0 )
+                            {
+                             des = "freezing";    
+                            }
+                        if ( x > 0 && x < 15 )
+                            {
+                             des = "chilly";
+                            }
+                        if ( x > 16 && x < 30 )
+                            {
+                             des = "comfortable";
+                            }
+                        if ( x > 31 && x < 40 )
+                            {
+                             des = "hot";
+                            }
+                        if ( x > 40 )
+                            {
+                             des = "AAAAAUUUUHGHHH!";
+                            }
+                        System.out.println(day + "\t" + temp[i] + "\t" + swing + "\t" + des );
                     }
-                }
-                else 
+                }// end if
+                else
                 {
-                    System.out.println("That's not a valid number of days!");
-                }
-            } // end method main
-    } // end class WeatherChaos
+                    System.out.println("That is not a valid number of days!");
+                }// end else
+            }// end method main
+    }// end class WeatherChoas
+         
