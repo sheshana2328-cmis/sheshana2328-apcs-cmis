@@ -21,7 +21,7 @@ public class Clock
      public String toString()
         {
          String output = new String();
-         output = "The time is " + hours + ":" + mins + ":" + secs;
+         output = "says " + hours + ":" + mins + ":" + secs;
          return output;
         }
     } //end class Clock
