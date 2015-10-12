@@ -12,6 +12,14 @@ public class Student
                 stuid = 4354;
                 gpa = 3.467;
             }
+        
+        public Student( String fname, String lname, int stuid, double gpa)
+            {
+                this.fname = new String (fname);
+                this.lname = new String (lname);
+                this.stuid = stuid;
+                this.gpa = gpa;
+            }
             
         public String toString() 
             {

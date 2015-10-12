@@ -12,7 +12,7 @@ public class Song
          title = new String("Communist Daughter");
          views = 106034;
          length = 2.01;
-        }// end contructor Song
+        }// end constructor Song
         
      public Song( String title, int views, double length )
         {
