@@ -19,7 +19,7 @@ public class Backpack
             {
                 String output = new String();
                 output = "Backpack Colour:" + colour + "\n" +
-                         "Cost:" + cost;
+                         "Cost: $" + cost;
                 return output;
             }//end method toString()
             

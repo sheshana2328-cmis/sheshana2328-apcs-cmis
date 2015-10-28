@@ -1,33 +1,28 @@
-
-/**
- * Write a description of class Card here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Card
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Card
-     */
-    public Card()
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
-}
+     //1. Create Instant Variable
+     
+     private int num;
+     private String suit;
+     
+     //2. Write constructor to initialize instance variables
+     public Card()
+        {
+         suit = new String("Clubs");
+         num = 7;
+        }// end constructor Card
+        
+     public Card( String suit, int num )
+        {
+            this.suit = new String( suit );
+            this.num = num;
+        }
+     //3. toString()
+     public String toString()
+        {
+         String output = new String();
+         output = num + " of " + suit;  
+         return output;       
+        }// end method toString()
+        
+    }// end class Song
