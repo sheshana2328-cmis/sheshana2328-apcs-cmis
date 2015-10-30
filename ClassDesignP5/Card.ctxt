@@ -2,7 +2,7 @@
 comment0.params=
 comment0.target=Card()
 comment1.params=suit\ num
-comment1.target=Card(java.lang.String,\ int)
+comment1.target=Card(java.lang.String,\ java.lang.String)
 comment2.params=
 comment2.target=java.lang.String\ toString()
 numComments=3
