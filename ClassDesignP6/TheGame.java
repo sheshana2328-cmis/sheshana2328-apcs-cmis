@@ -4,12 +4,15 @@ public class TheGame
             {
              String suit[] = {"Clubs", "Hearts", "Spades", "Diamonds"};
              String numval[] = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+             int points[] = new int [2];
+             int pnts = 0;
+             int pntval;
              
              String score = new String("");
              String suits;
              String value;
              
-             String Dealer[] = new String [2];
+             String Dealer[] = new String [20];
              String Player1[] = new String [2];
              String Player2[] = new String [2];
              String Player3[] = new String [2];          
@@ -23,10 +26,30 @@ public class TheGame
                   suits = suit[(int)(Math.random()*suit.length)];
                   value = numval[(int)(Math.random()*numval.length)];
                   Card myHand = new Card( suits, value );
-                  
+                  if ( value == "A" )
+                    {
+                        pnts += 1;
+                    }
+                  else if ( value == "J" )
+                    {
+                        pnts += 10;
+                    }
+                  else if ( value == "Q" )
+                    {
+                        pnts += 10;
+                    }
+                  else if ( value == "K" )
+                    {
+                        pnts += 10;
+                    }
+                  else
+                    {
+                        pntval = Integer.parseInt(Dealer[i]);
+                     }
                   System.out.println(myHand);
-                }
-                
+                  System.out.println(pnts);
+                 }
+                 
              System.out.print("\nPlayer1: \n\n");
              
              for (int i = 0; i < Player1.length; i++)
@@ -83,5 +106,6 @@ public class TheGame
                 }
                 
                 
+            
             }
     }
