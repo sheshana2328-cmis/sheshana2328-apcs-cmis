@@ -33,7 +33,7 @@ public class TheGame
                   Card myHand = new Card( suits, value );
                   if ( value == "A" )
                     {
-                        pntsd += 1;
+                        pntsd += 11;
                     }
                   else if ( value == "J" )
                     {
@@ -96,7 +96,7 @@ public class TheGame
                   Card myHand = new Card( suits, value );
                    if ( value == "A" )
                     {
-                        pntsone += 1;
+                        pntsone += 11;
                     }
                   else if ( value == "J" )
                     {
@@ -158,7 +158,7 @@ public class TheGame
                   Card myHand = new Card( suits, value );
                    if ( value == "A" )
                     {
-                        pntstwo += 1;
+                        pntstwo += 11;
                     }
                   else if ( value == "J" )
                     {
@@ -220,7 +220,7 @@ public class TheGame
                   Card myHand = new Card( suits, value );
                    if ( value == "A" )
                     {
-                        pntsthree += 1;
+                        pntsthree += 11;
                     }
                   else if ( value == "J" )
                     {
@@ -282,7 +282,7 @@ public class TheGame
                   Card myHand = new Card( suits, value );
                    if ( value == "A" )
                     {
-                        pntsfour += 1;
+                        pntsfour += 11;
                     }
                   else if ( value == "J" )
                     {
@@ -344,7 +344,7 @@ public class TheGame
                   Card myHand = new Card( suits, value );
                    if ( value == "A" )
                     {
-                        pntsfive += 1;
+                        pntsfive += 11;
                     }
                   else if ( value == "J" )
                     {
@@ -406,7 +406,12 @@ public class TheGame
                               
              System.out.println("Player Status\n===========================");
                                  
-            if ( pntsone > pntsd )
+
+            if ( pntsone == 21 )
+                {
+                 System.out.println("Player1 beats dealer with a BLACKJACK!"); 
+                }
+            else if ( pntsone > pntsd )
                 {
                  System.out.println("Player1 beats dealer!");
                 }
@@ -414,7 +419,11 @@ public class TheGame
                 {
                  System.out.println("Player1 lost to dealer!");
                 }
-            if ( pntstwo > pntsd )
+            if ( pntstwo == 21 )
+                {
+                 System.out.println("Player2 beats dealer with a BLACKJACK!"); 
+                }
+            else if ( pntstwo > pntsd )
                 {
                  System.out.println("Player2 beats dealer!");
                 }
@@ -422,15 +431,23 @@ public class TheGame
                 {
                  System.out.println("Player2 lost to dealer!");
                 }
-            if ( pntsthree > pntsd )
+            if ( pntsthree == 21 )
+                {
+                 System.out.println("Player3 beats dealer with a BLACKJACK!"); 
+                }
+            else if ( pntsthree > pntsd )
                 {
                  System.out.println("Player3 beats dealer!");
                 }
             else 
                 {
                  System.out.println("Player3 lost to dealer!");
+                }            
+            if ( pntsfour == 21 )
+                {
+                 System.out.println("Player4 beats dealer with a BLACKJACK!"); 
                 }
-            if ( pntsfour > pntsd )
+            else if ( pntsfour > pntsd )
                 {
                  System.out.println("Player4 beats dealer!");
                 }
@@ -438,7 +455,11 @@ public class TheGame
                 {
                  System.out.println("Player4 lost to dealer!");
                 }
-            if ( pntsfive > pntsd )
+            if ( pntsfive == 21 )
+                {
+                 System.out.println("Player5 beats dealer with a BLACKJACK!"); 
+                }
+            else if ( pntsfive > pntsd )
                 {
                  System.out.println("Player5 beats dealer!");
                 }
