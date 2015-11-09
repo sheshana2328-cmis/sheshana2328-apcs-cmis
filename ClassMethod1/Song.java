@@ -3,7 +3,7 @@ public class Song
      //1. Create Instant Variable
      
      private int yearReleased;
-     private double length;
+     private int length; //in sec
      private int views;
      private String title;
      
@@ -12,8 +12,8 @@ public class Song
         {
          title = new String("Communist Daughter");
          views = 106034;
-         length = 2.01;
-         yearReleased = 1998;
+         length = 121;
+         yearReleased = 1997;
         }// end constructor Song
         
      public int getYearReleased()
@@ -26,7 +26,12 @@ public class Song
             this.yearReleased = year;
         }
         
-     public Song( String title, int views, double length, int yearReleased )
+     public int convertToMinSec()
+        {
+             length /= 60;
+        }
+        
+     public Song( String title, int views, int length, int yearReleased )
         {
             this.title = new String( title );
             this.views = views;
