@@ -1,14 +1,5 @@
 public class CardDriver
     {
-<<<<<<< HEAD
-        public static void main (String[] argv)
-            {
-                Card Card1 = new Card();
-                
-                System.out.println(Card1);
-            }
-    }//end class CardDriver
-=======
         public static void main ( String[] argv )
             {
              String suit[] = {"Clubs", "Hearts", "Spades", "Diamonds"};
@@ -39,4 +30,3 @@ public class CardDriver
              
             }
     }
->>>>>>> a5ac0c43645f0538d87af8ca5f497effb7248979

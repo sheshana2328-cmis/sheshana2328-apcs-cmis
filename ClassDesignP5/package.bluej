@@ -3,11 +3,19 @@ dependency1.from=CardDriver
 dependency1.to=Card
 dependency1.type=UsesDependency
 objectbench.height=76
+<<<<<<< HEAD
 objectbench.width=662
 package.editor.height=400
 package.editor.width=560
 package.editor.x=209
 package.editor.y=78
+=======
+objectbench.width=686
+package.editor.height=400
+package.editor.width=560
+package.editor.x=51
+package.editor.y=178
+>>>>>>> a5ac0c43645f0538d87af8ca5f497effb7248979
 package.numDependencies=1
 package.numTargets=2
 package.showExtends=true
@@ -15,6 +23,7 @@ package.showUses=true
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
+<<<<<<< HEAD
 target1.editor.x=743
 target1.editor.y=36
 target1.height=50
@@ -29,6 +38,23 @@ target2.editor.height=298
 target2.editor.width=900
 target2.editor.x=78
 target2.editor.y=22
+=======
+target1.editor.x=298
+target1.editor.y=86
+target1.height=50
+target1.name=CardDriver
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=100
+target1.x=190
+target1.y=10
+target2.editor.height=700
+target2.editor.width=900
+target2.editor.x=111
+target2.editor.y=90
+>>>>>>> a5ac0c43645f0538d87af8ca5f497effb7248979
 target2.height=50
 target2.name=Card
 target2.naviview.expanded=true
