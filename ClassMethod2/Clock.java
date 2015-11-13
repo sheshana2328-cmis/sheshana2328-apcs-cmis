@@ -18,6 +18,13 @@ public class Clock
          this.mins = mins;
          this.secs = secs;
         }// end three-argv constructor
+     
+     public String convertDaylightSavings()
+        {
+            hours += 1;
+            String convertDaylightSavings = "\n\nSpringing Forwards!\n\nNow the clock says: " + hours + ":" + mins + ":" + secs ;
+            return convertDaylightSavings;
+        }   
         
      public String totalSeconds()
         {
@@ -26,12 +33,6 @@ public class Clock
             total = mins + hours + secs;
             String totalsec = "Total Seconds: " + total;
             return totalsec;
-        }
-     
-     public int convertDaylightSavings(int hour)
-        {
-            hours += hour;
-            return hours;
         }  
         
      public void setTime()
@@ -44,8 +45,8 @@ public class Clock
      public String toString()
         {
          String output = new String();
-         output = "says " + hours + ":" + mins + ":" + secs + "\n" +
-                  totalSeconds();
+         output = "says " + hours + ":" + mins + ":" + secs + "\n" + totalSeconds() +
+                  convertDaylightSavings() + "\n" + totalSeconds();
          return output;
         }
     } //end class Clock

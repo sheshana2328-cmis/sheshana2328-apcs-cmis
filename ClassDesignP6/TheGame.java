@@ -6,7 +6,6 @@ public class TheGame
              String numval[] = {"2","3","4","5","6","7","8","9","10","J","Q","K", "A"};
              int points[] = new int [2];
              int pntsd = 0;
-             //int pntval;
              int pntsone = 0;
              int pntstwo = 0;
              int pntsthree = 0;
