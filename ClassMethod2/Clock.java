@@ -28,24 +28,26 @@ public class Clock
             return totalsec;
         }
      
-     public int convertDaylightSavings(int hour)
-        {
-            hours += hour;
-            return hours;
-        }  
-        
-     public void setTime()
+     public void setTime( int hours, int mins, int secs )
         {
             this.hours = hours;
             this.mins = mins;
             this.secs = secs;
-        }
+        }   
+        
+     public String convertDaylightSavings()
+        {
+            hours += 1;
+            String convertDaylightSavings = "says " + hours + ":" + mins + ":" + secs + "\n" +
+                                            totalSeconds();
+            return convertDaylightSavings;
+        }  
      
      public String toString()
         {
          String output = new String();
          output = "says " + hours + ":" + mins + ":" + secs + "\n" +
-                  totalSeconds();
+                  totalSeconds() + "\n\n" + convertDaylightSavings();
          return output;
         }
     } //end class Clock

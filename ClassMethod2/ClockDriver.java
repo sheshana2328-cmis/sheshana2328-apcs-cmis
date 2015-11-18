@@ -14,6 +14,10 @@ public class ClockDriver
                 Clock bedroomClock = new Clock(hour, min, sec);
                 
                 System.out.println( "The kitchen clock " + kitchenClock + "\n");
-                System.out.println( "The bedroom clock " + bedroomClock );
+                
+                System.out.println( "The bedroom clock " + bedroomClock + "\n\n" );
+                bedroomClock.setTime( hour, min, sec );
+                System.out.println("Springing Forwards!"+"\n\n");
+                System.out.println( "The bedroom clock " + bedroomClock);
             }
     }//end class ClockDriver
