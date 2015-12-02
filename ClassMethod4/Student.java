@@ -51,12 +51,39 @@ public class Student
                 return gpa;
             }
             
+        public String getGrade()
+            {
+                String grade = new String();
+                if (gpa >= 4.00)
+                    {
+                        grade = "A";
+                    }
+                else if (gpa >= 3.00)
+                    {
+                        grade = "B";
+                    }
+                else if (gpa >= 2.00)
+                    {
+                        grade = "C";
+                    }
+                else if (gpa >= 1.00)
+                    {
+                        grade = "D";
+                    }
+                else 
+                    {
+                        grade = "F";
+                    }
+                return grade;
+            }
+            
         public String toString() 
             {
                 String output = new String();
-                output = "First name: " + fname + "\n" +
-                         "Last name: " + lname + "\n" +
-                         "GPA: " + calcGPA();
+                output = "Student's first name: " + fname + "\n" +
+                         "Student's last name: " + lname + "\n" +
+                         "Student's average GPA: " + calcGPA() + "\n" +
+                         fname + "'s Grade: " + getGrade();
                 return output;    
             }
     }// end class
