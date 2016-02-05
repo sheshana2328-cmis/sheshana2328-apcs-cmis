@@ -1,33 +1,41 @@
-
-/**
- * Write a description of class Roster here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Roster
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Roster
-     */
-    public Roster()
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
-}
+        private Students grades[]; 
+        
+        public Roster()
+            {
+                this.grades = new Students[3];
+                grades[0] = new Students("Nathan", "Charles", 4.00);
+                grades[1] = new Students("Kat", "Meow", 3.00);
+                grades[2] = new Students("Shiny", "Shing", 2.70);
+            }
+            
+        public Students findStudentWithMaxGPA()
+            {
+                int StudentIndex = 0;
+                double HighestGPA = 0;
+                
+                for ( int i = 0; i < grades.length; i++)
+                    {
+                        if(grades[i].getGPA() > HighestGPA)
+                            {
+                                StudentIndex = i;
+                                HighestGPA = grades[i].getGPA();
+                            }
+                    }
+                
+                return grades[StudentIndex];
+            }
+            
+        public String toString()
+            {
+                String output = new String();
+                output = "The Roster is:\n\n";
+                for (int x = 0; x < grades.length; x++)
+                    {
+                        output += grades[x] + "\n\n";
+                    }
+                output += "Student with the highest GPA: \n\n" +findStudentWithMaxGPA();
+                return output;
+            }
+    } //end class Roster
