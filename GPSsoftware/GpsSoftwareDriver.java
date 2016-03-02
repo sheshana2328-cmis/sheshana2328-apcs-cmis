@@ -15,19 +15,19 @@ public class GpsSoftwareDriver
         
         
         ArrayList<Integer> newmarkers = new ArrayList<Integer>();
-        newmarkers.add(20);
-        newmarkers.add(87);
-        newmarkers.add(10);
+        newmarkers.add(2);
+        newmarkers.add(89);
+        newmarkers.add(60);
         newmarkers.add(90);
-        newmarkers.add(99);
+        newmarkers.add(23);
         newmarkers.add(91);
-        newmarkers.add(91);
-        newmarkers.add(26);
-        newmarkers.add(99);
-        newmarkers.add(93);
-        newmarkers.add(91);
-        newmarkers.add(24);
-        newmarkers.add(46);
+        newmarkers.add(122);
+        newmarkers.add(89);
+        newmarkers.add(2);
+        newmarkers.add(90);
+        newmarkers.add(13);
+        newmarkers.add(89);
+        newmarkers.add(90);
         GpsSoftware TrailB = new GpsSoftware(newmarkers);
         System.out.print("TrailB\nindex Elevation \n" + TrailB);
         System.out.println("Trail's total distance is " + TrailB.getLength() + " Meters");
@@ -41,8 +41,8 @@ public class GpsSoftwareDriver
         newMarkers2.add(99);
         newMarkers2.add(96);
         newMarkers2.add(89);
-        newMarkers2.add(49);
-        newMarkers2.add(56);
+        newMarkers2.add(89);
+        newMarkers2.add(89);
         newMarkers2.add(63);
         newMarkers2.add(70);
         newMarkers2.add(80);
@@ -55,9 +55,9 @@ public class GpsSoftwareDriver
         System.out.print("TrailC\nindex Elevation \n" + TrailC);
         System.out.println("Trail's total distance is " + TrailC.getLength() + " Meters");
         System.out.println("Trail C is difficult: " + TrailC.isDifficult( 0 , newMarkers2.size() - 1));
-        System.out.println("Trail C from marker number 7 to 9 is difficult: " + TrailC.isDifficult(7 , 9));
+        System.out.println("Trail C from marker number 3 to 9 is difficult: " + TrailC.isDifficult(3 , 9));
         System.out.println("Trail C is level: " + TrailC.isLevelTrailSegment (0 , newMarkers2.size() - 1));
-        System.out.println("Trail C from marker number 2 to 8 is level: " + TrailC.isLevelTrailSegment( 2, 8) + "\n");
+        System.out.println("Trail C from marker number 2 to 4 is level: " + TrailC.isLevelTrailSegment( 2, 4) + "\n");
         
     }
 }

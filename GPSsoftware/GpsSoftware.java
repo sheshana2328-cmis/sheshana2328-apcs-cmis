@@ -7,18 +7,18 @@ public class GpsSoftware
     public GpsSoftware()
        {
          markers.add(43);
-         markers.add(1);
-         markers.add(2);
-         markers.add(99);
-         markers.add(99);
-         markers.add(89);
-         markers.add(175);
-         markers.add(178);
-         markers.add(100);
-         markers.add(10);
-         markers.add(5);
-         markers.add(3);
-         markers.add(1);
+         markers.add(49);
+         markers.add(34);
+         markers.add(44);
+         markers.add(42);
+         markers.add(46);
+         markers.add(39);
+         markers.add(36);
+         markers.add(40);
+         markers.add(45);
+         markers.add(48);
+         markers.add(44);
+         markers.add(43);
        } // end void main 
        
     public GpsSoftware(ArrayList markers)
@@ -70,7 +70,7 @@ public class GpsSoftware
     {
         int height = 0;
         
-        for( int i = begin; i < end; i++ )
+        for( int i = begin; i <= end; i++ )
            {
             if( i > begin && markers.get(i) - markers.get(i-1) > 0)
                {
@@ -78,7 +78,7 @@ public class GpsSoftware
                } // end if
            } // end for 
         
-        if (height > 100 && isLevelTrailSegment(begin, end))
+        if (height >= 100 && isLevelTrailSegment(begin, end) == false)
            {
             return true;
            } // end if 
