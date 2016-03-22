@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=iGame()
+comment1.params=memory\ condition\ games\ mostplayedgame
+comment1.target=iGame(int,\ boolean,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getMostPlayed()
+comment3.params=mostplayedgame
+comment3.target=void\ setGame(java.lang.String)
+comment4.params=games
+comment4.target=void\ setNum(int)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

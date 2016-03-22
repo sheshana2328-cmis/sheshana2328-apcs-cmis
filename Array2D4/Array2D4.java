@@ -4,11 +4,9 @@ public class Array2D4
 {
     public static void main (String[] argv)
     {
-        String rowinput = JOptionPane.showInputDialog("Enter number of Rows:");
-        String colinput = JOptionPane.showInputDialog("Enter number of Columns:");
+        int ri = Integer.parseInt(JOptionPane.showInputDialog("Enter number of Rows:"));
+        int ci = Integer.parseInt(JOptionPane.showInputDialog("Enter number of Columns:"));
         String lowerUpper = JOptionPane.showInputDialog("Lower or Upper Case? (input 'lower'/'upper'):");
-        int ri = Integer.parseInt(rowinput);
-        int ci = Integer.parseInt(colinput);
         String[][] alphagrid = new String[ci][ci];
         String[] alpha = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z" };
         int ctr = 0;
@@ -31,11 +29,11 @@ public class Array2D4
                     ctr++;
                     if (x % 2 == 0)
                     {
-                        System.out.print(alphagrid[x][y]+"\t\t");
+                        System.out.print(alphagrid[x][y]+"\t");
                     }
                     else
                     {
-                        System.out.print("\t" + alphagrid[x][y]);
+                        System.out.print("    " + alphagrid[x][y] + "\t");
                     }//end else
                 }//end inner for loop
                 System.out.print("\n\n");
@@ -63,7 +61,7 @@ public class Array2D4
                     }//end if 
                     else
                         {
-                        System.out.print("\t" + alphagrid[x][y].toLowerCase());  
+                        System.out.print("    " + alphagrid[x][y].toLowerCase() + "\t");  
                         }//end else
                 }//end inner for loop
                 System.out.print("\n\n");
