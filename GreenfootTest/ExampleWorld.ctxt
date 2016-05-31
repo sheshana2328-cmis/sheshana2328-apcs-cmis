@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ExampleWorld
+comment0.text=\n\ This\ subclass\ is\ just\ an\ example.\ You\ can\ delete\ it\ or\ change\ the\ code\ if\ you\ want.\n\ It's\ not\ necessary\ for\ the\ scrolling\ system.\n
+comment1.params=
+comment1.target=ExampleWorld()
+comment2.params=
+comment2.target=void\ createExampleWorld()
+comment2.text=\n\ Creates\ an\ example\ world\ where\ the\ ScrollingActor\ can\ move.\n
+numComments=3
