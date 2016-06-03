@@ -12,8 +12,8 @@ public class BasketBall extends Enemy implements Survive
     public void act() 
     {
         drop();
-        survive();
         getScore();
+        survive();
     }  
     public void drop()
     {
